@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #0077B6; 
+    color: #FFFFFF; 
+    padding-top: 70px;
+}
+
+/* Estilo do Menu Fixo (Sticky) */
+.sticky-header {
+    background-color: #005A8D; /* Header */
+    color: #FFFFFF;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-header .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky-header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sticky-header nav ul {
+    list-style: none;
+}
+
+.sticky-header nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.sticky-header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sticky-header nav a:hover,
+.sticky-header nav a.active {
+    background-color: #0077B6; 
+    color: #FFFFFF;
+}
+
+/* Container principal*/
+.content-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px 0;
+}
+
+/* Estilo das Seções */
+.section {
+    background-color: transparent; 
+    color: #FFFFFF;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    min-height: 400px; 
+}
+
+.section h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7); 
+    font-size: 2em;
+}
+
+.section p, .section ul, .section ol {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    color: #FFFFFF;
+}
+
+.section ul, .section ol {
+    padding-left: 20px;
+}
+
+/* Cores para feedback */
+.texto-vermelho-alerta {
+    color: #FF8A80; 
+    font-weight: bold;
+}
+.fundo-vermelho-alerta {
+    background-color: #FF3B30;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.texto-verde-seguro {
+    color: #99FF99; 
+    font-weight: bold;
+}
+.fundo-verde-seguro {
+    background-color: #34C759;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.indicador-luminoso {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    vertical-align: middle;
+    border: 1px solid rgba(255,255,255,0.7);
+}
+.indicador-proximo {
+    background-color: #FF3B30;
+}
+.indicador-longe {
+    background-color: #34C759;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sticky-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sticky-header .logo {
+        margin-bottom: 10px;
+    }
+    .sticky-header nav ul {
+        text-align: center;
+    }
+    .sticky-header nav li {
+        margin: 0 10px;
+    }
+    body {
+        padding-top: 120px;
+    }
+    .section h2 {
+        font-size: 1.8em;
+    }
+}
+/* Integrantes */
+
+.integrante-card {
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-left: 4px solid #FFFFFF; 
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 0 8px 8px 0;
+}
+
+.integrante-card h3 {
+    margin-top: 0;
+    color: #FFFFFF; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.integrante-card p {
+    margin-bottom: 8px; 
+    color: #E0E0E0; 
+}
+
+.integrante-card p:last-child {
+    margin-bottom: 0; 
+}
+
+.integrante-card strong {
+    color: #FFFFFF; 
+    font-weight: 600; 
+}
+/* Instruções */
+
+/* Container do vídeo responsivo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000000; 
+    margin-top: 25px; 
+    margin-bottom: 25px; 
+    border-radius: 8px; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
+}
+
+/* Estilo para o texto complementar na seção de instruções */
+.instrucoes-texto p,
+.instrucoes-texto ol,
+.instrucoes-texto ul {
+    margin-bottom: 15px; 
+}
+
+.instrucoes-texto ul,
+.instrucoes-texto ol {
+    padding-left: 25px; 
+}
+
+.instrucoes-texto li {
+    margin-bottom: 8px; 
+}
+
+.instrucoes-texto strong {
+    color: #FFFFFF; 
+}

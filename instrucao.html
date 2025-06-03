@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <div class="container">
+            <a href="index.html" class="logo">EspantaTuba</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="instrucao.html" class="active">Instruções</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section id="instrucao-video" class="section">
+            <h2>Demonstração e Instruções em Vídeo</h2>
+            <p>Assista ao vídeo abaixo para ver o "Espanta Tuba" em ação e entender seu funcionamento em detalhes. Mostramos a montagem, os testes e explicamos a lógica por trás do protótipo.</p>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="instrucao-texto-complementar" class="section instrucoes-texto">
+            <h2>Instruções Complementares e Componentes</h2>
+            <p>Além do vídeo, aqui estão alguns detalhes importantes sobre os componentes e a lógica de funcionamento do "Espanta Tuba":</p>
+            <ol>
+                <li><strong>Componentes Principais:</strong>
+                    <ul>
+                        <li>Microcontrolador Arduino.</li>
+                        <li>Sensor Ultrassônico.</li>
+                        <li>LED Vermelho e LED Verde.</li>
+                        <li>Resistores </li>
+                        <li>Buzzer passivo</li>
+                        <li>Protoboard e jumpers para conexões.</li>
+                    </ul>
+                </li>
+                <li><strong>Lógica de Funcionamento:</strong>
+                    <ul>
+                        <li>O sensor ultrassônico envia um pulso e mede o tempo de retorno do eco para calcular a distância.</li>
+                        <li><strong>Perto:</strong> Se a distância detectada for menor que 40cm, o LED vermelho acende e o buzzer é ativado.</li>
+                        <li><strong>Longe:</strong> Se a distância for maior que 40cm, o LED verde acende e o buzzer permanece desligado.</li>
+                    </ul>
+                </li>
+                <li><strong>Observações:</strong>
+                    <ul>
+                        <li> - Link GitHub - </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+</body>
+</html>
