@@ -256,3 +256,18 @@ body {
 .instrucoes-texto a.link-github:hover {
     color: #99FF99; 
 }
+
+.site-footer {
+    background-color: #003B5C; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95em;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-footer .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}

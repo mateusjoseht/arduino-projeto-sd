@@ -23,19 +23,6 @@
     </header>
 
     <main class="content-container">
-        <section id="instrucao-video" class="section">
-            <h2>Demonstração e Instruções em Vídeo</h2>
-            <p>Assista ao vídeo abaixo para ver o "Espanta Tuba" em ação e entender seu funcionamento em detalhes. Mostramos a montagem, os testes e explicamos a lógica por trás do protótipo.</p>
-
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
         <section id="instrucao-texto-complementar" class="section instrucoes-texto">
             <h2>Instruções Complementares e Componentes</h2>
             <p>Além do vídeo, aqui estão alguns detalhes importantes sobre os componentes e a lógica de funcionamento do "Espanta Tuba":</p>
@@ -47,6 +34,7 @@
                         <li>LED Vermelho e LED Verde.</li>
                         <li>Resistores </li>
                         <li>Buzzer passivo</li>
+                        <li>motor servo</li>
                         <li>Protoboard e jumpers para conexões.</li>
                     </ul>
                 </li>
@@ -54,10 +42,11 @@
                     <ul>
                         <li>O sensor ultrassônico envia um pulso e mede o tempo de retorno do eco para calcular a distância.</li>
                         <li><strong>Perto:</strong> Se a distância detectada for menor que 10cm, o LED vermelho acende e o buzzer é ativado.</li>
-                        <li><strong>Longe:</strong> Se a distância for maior que 10cm, o LED verde acende e o buzzer permanece desligado.</li>
+                        <li><strong>Longe:</strong> Se a distância for maior que 10cm e até 40cm, o LED verde acende e o buzzer permanece desligado.</li>
+                        <li><strong>Indetectado:</strong> Caso ultrapasse os 40cm, representa que não existe nenhum elemento naquela proximidade, mantendo os leds desligados</li>
                     </ul>
                 </li>
-                <li><strong>Observações:</strong>
+                <li><strong>Repositório GitHub:</strong>
                     <ul>
                         <li><strong>GitHub:</strong> <a href="https://github.com/mateusjoseht/arduino-projeto-sd.git" class="link-github">arduino-projeto-sd</a></li>
                     </ul>
@@ -65,6 +54,10 @@
             </ol>
         </section>
     </main>
+     <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 Equipe Espanta Tuba.</p>
+    </div>
 
 </body>
 </html>
