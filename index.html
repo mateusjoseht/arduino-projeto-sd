@@ -3,23 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Espanta Tuba - Inovação em Segurança Aquática</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="sticky-header">
         <div class="container">
             <a href="index.html" class="logo">EspantaTuba</a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="instrucao.html">Instruções</a></li>
+                    <li><a href="instrucao.html">Instrução</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    
+    <main class="content-container">
+        <section class="hero-section section">
+            <h1>Espanta Tuba: Segurança Aquática Inovadora</h1>
+            <p class="subtitle">Nosso protótipo com Arduino detecta proximidade e emite alertas visuais e sonoros, visando aumentar a segurança em ambientes aquáticos em Recife.</p>
+            <a href="instrucao.html" class="cta-button">Veja como Funciona</a>
+        </section>
+
+        <section id="o-que-e" class="section">
+            <h2>O Que é o Espanta Tuba?</h2>
+            <p>O Espanta Tuba é uma solução prototipada que utiliza tecnologia acessível para um problema real: o risco de encontros inesperados e perigosos em águas costeiras de Recife. Através de um sensor ultrassônico, nosso dispositivo mede continuamente a distância de objetos próximos.</p>
+            <p>Ao detectar um objeto dentro de um limite de alerta, o sistema aciona um LED vermelho e um buzzer. Caso o objeto esteja distante ou ausente, um LED verde indica uma condição de maior segurança. Este projeto é um exercício prático da disciplina de Sistemas Digitais, aplicando eletrônica e programação com Arduino.</p>
+        </section>
+
+        <section id="caracteristicas" class="section">
+            <h2>Principais Características</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Detecção Ultrassônica</h3>
+                    <p>Utiliza ondas sonoras para medir distâncias com precisão.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Alerta Visual</h3>
+                    <p>LEDs vermelho e verde indicam instantaneamente o status de proximidade.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Alerta Sonoro</h3>
+                    <p>Buzzer para reforçar o aviso em situações de maior risco.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Baseado em Arduino</h3>
+                    <p>Tecnologia aberta e acessível para prototipagem rápida.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-callout">
+            <h2>Explore Mais</h2>
+            <p>Descubra os detalhes da nossa motivação, os objetivos que traçamos e a visão de futuro para o Espanta Tuba. <a href="sobre.html">Conheça mais sobre o projeto.</a></p>
+            <p>Conheça a equipe de estudantes que dedicou tempo e conhecimento para dar vida a este protótipo. <a href="integrantes.html">Nossos Integrantes.</a></p>
+            <p>Para uma demonstração visual completa do Espanta Tuba em funcionamento e instruções passo a passo, <a href="instrucao.html">assista ao nosso vídeo e veja as instruções.</a></p>
+        </section>
+    </main>
+</body>
+</html>
